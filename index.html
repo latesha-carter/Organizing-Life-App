@@ -6,7 +6,7 @@
     <title>Organizing Life App</title>
     <style>
         body {
-            background-color: #D2B48C !important; /* Light brown background color */
+            background-color: #D2B48C; /* Light brown background color */
             color: #333; /* Change text color */
         }
         h1 {
@@ -22,6 +22,14 @@
     <h1>Welcome to Organizing Life App</h1>
     <input type="text" id="taskInput" placeholder="Enter a task">
     <button onclick="addTask()">Add Task</button>
+    
+    <!-- New dropdown added here -->
+    <select id="taskPriority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+    
     <ul id="taskList"></ul>
     <script src="app.js"></script>
 </body>
